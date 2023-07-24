@@ -30,9 +30,11 @@ const postPage = (props: any) => {
     return (
         <div>
             <h1>{post.data.title}</h1>
-            <Markdown>
-                {post.content}
-            </Markdown>
+            <article className="prose lg:prose-xl">
+                <Markdown>
+                    {post.content}
+                </Markdown>
+            </article>
         </div>
     );
 };
