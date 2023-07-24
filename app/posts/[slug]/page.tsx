@@ -6,7 +6,7 @@ import getPostMeta from "@/components/getPostMeta";
 
 const getPostContent = (slug: string) => {
     /* get post content from slug */
-    const folder = path.join(process.cwd(), 'posts');
+    const folder = path.join(process.cwd(), 'posts/');
     // get the file via the path and slug name being passed in params
     const file = `${folder}${slug}.md`;
     // decode the file content to utf-8
