@@ -4,7 +4,7 @@ import { PostMetadata } from "@/components/PostMetadata";
 
 const getPostMeta = (): PostMetadata[] => {
     /* returns all post metadata */
-    const folder = "posts/";
+    const folder = "app/posts/";
     const files = fs.readdirSync(folder);
     // get all markdown posts through filter
     const mdPosts = files.filter((file) => file.endsWith(".md"));
